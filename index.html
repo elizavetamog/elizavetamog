@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Елизавета — психолог (КПТ, АСТ, схема-терапия)</title>
+<meta name="description" content="Начинающий психолог Елизавета. Работаю в подходах КПТ, АСТ и схема-терапии: тревожность, самооценка, депрессия, стресс, отношения.">
+<meta property="og:title" content="Елизавета — психолог">
+<meta property="og:description" content="Безопасное пространство для разговора и поддержки. КПТ, АСТ, схема-терапия.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:wght@500;600&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --main:#4E1A28; --dark:#34111A; --mid:#632838; --soft:#EADBDD; --bg:#F8F3F3;
+  --ink:#2A1F21; --text:#4D3F42; --muted:#6A5A5D; --line:#DCC9CC; --field:#C9B3B7;
+  --on-dark:#F1E3E5; --on-dark-2:#E3CBCF;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:'Manrope',system-ui,sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased}
+a{color:var(--main)}a:hover{color:var(--dark)}
+h1,h2,h3,p{margin:0}
+h1,h2,.serif{font-family:'Lora',Georgia,serif;font-weight:500}
+.wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+section{padding:96px 0}
+h2{font-size:40px;line-height:1.2}
+
+/* Шапка */
+header .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px;padding-top:28px;padding-bottom:28px}
+.logo{font-family:'Lora',Georgia,serif;font-size:22px;font-weight:600;color:var(--main);text-decoration:none}
+nav{display:flex;flex-wrap:wrap;align-items:center;gap:8px 28px;font-size:15px;font-weight:500}
+nav a{color:var(--ink);text-decoration:none;padding:10px 0}
+nav a.btn-nav{background:var(--main);color:#fff;padding:12px 22px;border-radius:999px;font-weight:600}
+nav a.btn-nav:hover{background:var(--dark);color:#fff}
+
+/* Обложка */
+.hero{padding:40px 0 96px}
+.hero .wrap{display:flex;flex-wrap:wrap;align-items:center;gap:56px}
+.hero-text{flex:1 1 460px;min-width:0;display:flex;flex-direction:column;gap:28px}
+.eyebrow{font-size:14px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--main)}
+.hero h1{font-size:56px;line-height:1.12}
+.lead{font-size:19px;color:var(--text);max-width:520px}
+.chips{display:flex;flex-wrap:wrap;gap:10px}
+.chip{padding:8px 18px;border-radius:999px;background:var(--soft);color:var(--dark);font-size:15px;font-weight:600}
+.actions{display:flex;flex-wrap:wrap;gap:14px;align-items:center}
+.btn{display:inline-block;background:var(--main);color:#fff;text-decoration:none;padding:16px 32px;border-radius:999px;font-weight:700;font-size:16px;border:0;font-family:inherit;cursor:pointer}
+.btn:hover{background:var(--dark);color:#fff}
+.link-quiet{color:var(--main);text-decoration:none;padding:16px 8px;font-weight:600}
+.photo{flex:1 1 340px;min-width:0;min-height:520px;border-radius:260px 260px 28px 28px;background:var(--soft);overflow:hidden;position:relative}
+.photo img{position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover}
+
+/* О себе */
+.about{background:#fff}
+.about .wrap{display:flex;flex-wrap:wrap;gap:56px}
+.about .col-a{flex:1 1 320px;min-width:0}
+.about .col-b{flex:2 1 520px;min-width:0;display:flex;flex-direction:column;gap:24px}
+.about .big{font-size:19px}
+.about .small{font-size:17px;color:var(--text)}
+.facts{display:flex;flex-wrap:wrap;gap:16px;margin-top:8px}
+.fact{flex:1 1 200px;background:var(--bg);border-radius:20px;padding:24px}
+.fact b{display:block;font-family:'Lora',Georgia,serif;font-size:28px;font-weight:600;color:var(--main)}
+.fact span{font-size:15px;color:var(--text)}
+
+/* Запросы */
+.head{display:flex;flex-direction:column;gap:12px;max-width:640px;margin-bottom:48px}
+.head p{font-size:17px;color:var(--text)}
+.cards{display:flex;flex-wrap:wrap;gap:20px}
+.card{flex:1 1 320px;min-width:0;background:#fff;border-radius:24px;padding:32px;display:flex;flex-direction:column;gap:12px}
+.card .num{font-family:'Lora',Georgia,serif;font-size:18px;color:var(--main);font-weight:600}
+.card h3{font-size:22px;font-weight:700}
+.card p{font-size:16px;color:var(--text)}
+
+/* Подходы */
+.methods{background:var(--main);color:#fff}
+.methods h2{margin-bottom:48px}
+.methods .card{background:var(--mid)}
+.methods .card h3{font-size:24px}
+.methods .card .sub{font-size:14px;font-weight:600;color:var(--on-dark-2)}
+.methods .card p{color:var(--on-dark)}
+
+/* Образование */
+.edu .wrap{display:flex;flex-wrap:wrap;gap:56px}
+.edu .col-a{flex:1 1 280px;min-width:0}
+.edu .col-b{flex:2 1 560px;min-width:0;border-bottom:1px solid var(--line)}
+.row{display:flex;flex-wrap:wrap;gap:8px 32px;padding:24px 0;border-top:1px solid var(--line)}
+.row .when{flex:0 0 180px;font-weight:700;color:var(--main)}
+.row .what{flex:1 1 320px;min-width:0}
+.row .what b{display:block;font-size:18px}
+.row .what span{display:block;color:var(--text);font-size:16px}
+.row .what a{display:inline-block;margin-top:8px;padding:6px 0;font-weight:600;font-size:15px}
+
+/* Как проходит работа */
+.steps{background:#fff}
+.steps h2{margin-bottom:48px}
+.step{flex:1 1 300px;min-width:0;border-top:3px solid var(--main);padding-top:24px;display:flex;flex-direction:column;gap:10px}
+.step .num{font-family:'Lora',Georgia,serif;font-size:18px;color:var(--main);font-weight:600}
+.step h3{font-size:22px;font-weight:700}
+.step p{font-size:16px;color:var(--text)}
+
+/* Контакты */
+.contact-box{background:var(--main);color:#fff;border-radius:32px;padding:56px;display:flex;flex-wrap:wrap;gap:48px}
+.contact-info{flex:1 1 360px;min-width:0;display:flex;flex-direction:column;gap:20px}
+.contact-info h2{font-size:40px}
+.contact-info p{font-size:17px;color:var(--on-dark)}
+.contact-info .lines{display:flex;flex-direction:column;gap:4px;font-size:17px;font-weight:600}
+.contact-info .lines a{color:#fff;padding:4px 0}
+form{flex:1 1 360px;min-width:0;background:#fff;color:var(--ink);border-radius:24px;padding:32px;display:flex;flex-direction:column;gap:18px}
+.field{display:flex;flex-direction:column;gap:6px}
+label{font-size:14px;font-weight:700}
+input,textarea{width:100%;border:1px solid var(--field);border-radius:12px;padding:0 16px;font-size:16px;font-family:inherit;color:var(--ink);background:#fff}
+input{height:48px}
+textarea{padding:12px 16px;resize:vertical}
+input:focus,textarea:focus{outline:2px solid var(--main);outline-offset:1px}
+form .btn{width:100%;height:52px;padding:0}
+.note{font-size:13px;color:var(--muted)}
+
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;padding-top:16px;padding-bottom:48px;font-size:14px;color:var(--muted)}
+
+/* Окна сертификатов (открываются по ссылке #cert-...) */
+.modal{display:none;position:fixed;top:0;right:0;bottom:0;left:0;z-index:50;align-items:center;justify-content:center;padding:24px}
+.modal:target{display:flex}
+.modal-bg{position:absolute;top:0;right:0;bottom:0;left:0;background:rgba(42,31,33,.72)}
+.modal-card{position:relative;background:#fff;border-radius:24px;padding:24px;max-width:760px;width:100%;max-height:100%;overflow:auto;display:flex;flex-direction:column;gap:16px}
+.modal-top{display:flex;align-items:center;justify-content:space-between;gap:16px}
+.modal-top b{font-size:18px}
+.modal-top a{font-weight:600;padding:10px 4px}
+.modal-card img{display:block;width:100%;height:auto;border-radius:12px;background:var(--soft);min-height:120px}
+
+/* Телефон */
+@media (max-width:720px){
+  section{padding:64px 0}
+  h2,.contact-info h2{font-size:30px}
+  .hero{padding:16px 0 64px}
+  .hero .wrap{gap:36px}
+  .hero h1{font-size:36px}
+  .lead{font-size:17px}
+  .photo{min-height:380px;border-radius:200px 200px 24px 24px}
+  .contact-box{padding:28px;border-radius:24px;gap:32px}
+  form{padding:24px}
+  .row .when{flex-basis:100%}
+}
+</style>
+</head>
+<body>
+
+<header>
+<div class="wrap">
+<a class="logo" href="#top">Елизавета · психолог</a>
+<nav aria-label="Основное меню">
+<a href="#about">Обо мне</a>
+<a href="#topics">С чем работаю</a>
+<a href="#methods">Подходы</a>
+<a href="#education">Образование</a>
+<a class="btn-nav" href="#contact">Записаться</a>
+</nav>
+</div>
+</header>
+
+<main id="top">
+
+<section class="hero">
+<div class="wrap">
+<div class="hero-text">
+<div class="eyebrow">Психологическая помощь</div>
+<h1>Безопасное пространство для разговора и поддержки</h1>
+<p class="lead">Здравствуйте, меня зовут Елизавета. Я начинающий психолог и помогаю с запросами, которые сложно нести в одиночку, опираясь на современные подходы в психотерапии.</p>
+<div class="chips"><span class="chip">КПТ</span><span class="chip">АСТ</span><span class="chip">Схема-терапия</span></div>
+<div class="actions">
+<a class="btn" href="#contact">Записаться на консультацию</a>
+<a class="link-quiet" href="#about">Узнать обо мне</a>
+</div>
+</div>
+<div class="photo">
+<!-- Положите ваше фото в папку с сайтом под именем photo.jpg -->
+<img src="photo.jpg" alt="Елизавета, психолог" onerror="this.style.display='none'">
+</div>
+</div>
+</section>
+
+<section class="about" id="about">
+<div class="wrap">
+<div class="col-a"><h2>Обо мне</h2></div>
+<div class="col-b">
+<p class="big">Добрый день, меня зовут Елизавета! Я начинающий психолог, работаю в подходах КПТ, АСТ и схема-терапии.</p>
+<p class="small">Я готова помочь вам решить ваши вопросы и проблемы, используя современные подходы в психотерапии. Моя цель — создать безопасное пространство для обсуждения и поддержки.</p>
+<div class="facts">
+<div class="fact"><b>МГУ</b><span>Факультет психологии, 2023–2029</span></div>
+<div class="fact"><b>3 подхода</b><span>КПТ, АСТ, схема-терапия</span></div>
+<div class="fact"><b>2024</b><span>Научная публикация, конференция «Ломоносов»</span></div>
+</div>
+</div>
+</div>
+</section>
+
+<section id="topics">
+<div class="wrap">
+<div class="head">
+<h2>С чем я работаю</h2>
+<p>Если вам нужна поддержка или вы хотите улучшить своё эмоциональное состояние, обращайтесь.</p>
+</div>
+<div class="cards">
+<div class="card"><div class="num">01</div><h3>Тревожность</h3><p>Постоянное беспокойство, напряжение, трудно расслабиться и «выключить» мысли.</p></div>
+<div class="card"><div class="num">02</div><h3>Самооценка</h3><p>Сомнения в себе, самокритика, трудности с опорой на собственные ценности.</p></div>
+<div class="card"><div class="num">03</div><h3>Депрессия</h3><p>Сниженное настроение, упадок сил, потеря интереса к тому, что раньше радовало.</p></div>
+<div class="card"><div class="num">04</div><h3>Стресс</h3><p>Перегрузка, выгорание, ощущение, что ресурсов на привычный ритм уже не хватает.</p></div>
+<div class="card"><div class="num">05</div><h3>Проблемы в отношениях</h3><p>Конфликты, повторяющиеся сценарии, трудности с близостью и границами.</p></div>
+<div class="card"><div class="num">06</div><h3>Развитие личностных навыков</h3><p>Эмоциональная регуляция, коммуникация, умение заботиться о себе.</p></div>
+</div>
+</div>
+</section>
+
+<section class="methods" id="methods">
+<div class="wrap">
+<h2>Подходы, в которых я работаю</h2>
+<div class="cards">
+<div class="card"><h3>КПТ</h3><div class="sub">Когнитивно-поведенческая терапия</div><p>Работа с мыслями, эмоциями и поведением, которые поддерживают трудности, и поиск более полезных способов реагировать.</p></div>
+<div class="card"><h3>АСТ</h3><div class="sub">Терапия принятия и ответственности</div><p>Учимся принимать непростые переживания и действовать в согласии со своими ценностями.</p></div>
+<div class="card"><h3>Схема-терапия</h3><div class="sub">Работа с устойчивыми паттернами</div><p>Понимаем, какие привычные сценарии сложились раньше и как они влияют на самооценку и отношения сегодня.</p></div>
+</div>
+</div>
+</section>
+
+<section class="edu" id="education">
+<div class="wrap">
+<div class="col-a"><h2>Образование и обучение</h2></div>
+<div class="col-b">
+<div class="row"><div class="when">2023–2029</div><div class="what"><b>МГУ имени М.В. Ломоносова</b><span>Факультет психологии, направление «психология служебной деятельности»</span></div></div>
+<div class="row"><div class="when">31 октября 2026</div><div class="what"><b>НМИЦ психиатрии и наркологии им. В. П. Сербского</b><span>«Диагностика психоэмоционального состояния на основе анализа невербального поведения», 18 академ. часов</span><a href="#cert-serbsky">Посмотреть сертификат</a></div></div>
+<div class="row"><div class="when">19 октября 2026</div><div class="what"><b>МИПЗ</b><span>«Базовые методы терапии принятия и ответственности (АСТ)», 11,4 академ. часа</span><a href="#cert-act">Посмотреть сертификат</a></div></div>
+<div class="row"><div class="when">28 января — 8 апреля 2026</div><div class="what"><b>The International Academy of Psychodynamic Psychotherapy</b><span>«Psychoanalytic diagnosis. Understanding personality structure in the clinical process», лектор Nancy McWilliams, PhD, 16 академ. часов</span><a href="#cert-mcwilliams">Посмотреть сертификат</a></div></div>
+<div class="row"><div class="when">[ГОД]</div><div class="what"><b>Московский институт психосоматического здоровья</b><span>Обучение подходу КПТ</span><a href="#cert-kpt">Посмотреть сертификат</a></div></div>
+<div class="row"><div class="when">2024</div><div class="what"><b>Конференция «Ломоносов»</b><span>Публикация научной статьи «Дружба между мужчиной и женщиной»</span><a href="https://confhub.ru/archive/Lomonosov_2025/data/36799/185586_uid479338_report.pdf" target="_blank" rel="noopener">Читать статью</a></div></div>
+<div class="row"><div class="when">2024</div><div class="what"><b>University of Chicago</b><span>Курс «Neuroscience»</span><a href="#cert-chicago">Посмотреть сертификат</a></div></div>
+</div>
+</div>
+</section>
+
+<section class="steps">
+<div class="wrap">
+<h2>Как проходит работа</h2>
+<div class="cards">
+<div class="step"><div class="num">Шаг 1</div><h3>Первая встреча</h3><p>Знакомимся, вы рассказываете о своём запросе. Длительность: [ДЛИТЕЛЬНОСТЬ ВСТРЕЧИ].</p></div>
+<div class="step"><div class="num">Шаг 2</div><h3>Цели и план</h3><p>Вместе договариваемся, чего вы хотите достичь и в каком формате будем работать.</p></div>
+<div class="step"><div class="num">Шаг 3</div><h3>Регулярная работа</h3><p>Встречи в формате [ОНЛАЙН / ОЧНО]. Стоимость консультации: [СТОИМОСТЬ].</p></div>
+</div>
+</div>
+</section>
+
+<section id="contact">
+<div class="wrap">
+<div class="contact-box">
+<div class="contact-info">
+<h2>Буду ждать Вас в комфортном и безопасном пространстве</h2>
+<p>Оставьте заявку или напишите мне напрямую, и мы договоримся о первой встрече.</p>
+<div class="lines">
+<div>Telegram: <a href="https://t.me/[НИК]">@[НИК]</a></div>
+<div>Телефон: <a href="tel:[ТЕЛЕФОН]">[ТЕЛЕФОН]</a></div>
+<div>E-mail: <a href="mailto:[ПОЧТА]">[ПОЧТА]</a></div>
+</div>
+</div>
+<form id="lead">
+<div class="field"><label for="f-name">Ваше имя</label><input id="f-name" type="text" required autocomplete="given-name"></div>
+<div class="field"><label for="f-contact">Телефон или Telegram</label><input id="f-contact" type="text" required></div>
+<div class="field"><label for="f-msg">С чем хотите обратиться (по желанию)</label><textarea id="f-msg" rows="3"></textarea></div>
+<button class="btn" type="submit">Отправить заявку в Telegram</button>
+<p class="note">Заявка откроется в Telegram как готовое сообщение, вам останется нажать «Отправить».</p>
+</form>
+</div>
+</div>
+</section>
+
+</main>
+
+<footer>
+<div class="wrap">
+<div>© 2026 Елизавета [ФАМИЛИЯ], психолог</div>
+<div>КПТ · АСТ · Схема-терапия</div>
+</div>
+</footer>
+
+<!-- Окна сертификатов. Положите сканы в папку certs/ под этими именами (JPG). -->
+<div class="modal" id="cert-serbsky"><a class="modal-bg" href="#education" aria-label="Закрыть"></a><div class="modal-card"><div class="modal-top"><b>НМИЦ им. Сербского, 2026</b><a href="#education">Закрыть</a></div><img src="certs/serbsky.jpg" alt="Сертификат: диагностика психоэмоционального состояния на основе анализа невербального поведения"></div></div>
+<div class="modal" id="cert-act"><a class="modal-bg" href="#education" aria-label="Закрыть"></a><div class="modal-card"><div class="modal-top"><b>МИПЗ, АСТ, 2026</b><a href="#education">Закрыть</a></div><img src="certs/act.jpg" alt="Сертификат: базовые методы терапии принятия и ответственности (АСТ)"></div></div>
+<div class="modal" id="cert-mcwilliams"><a class="modal-bg" href="#education" aria-label="Закрыть"></a><div class="modal-card"><div class="modal-top"><b>Nancy McWilliams, 2026</b><a href="#education">Закрыть</a></div><img src="certs/mcwilliams.jpg" alt="Сертификат: Psychoanalytic diagnosis, Nancy McWilliams"></div></div>
+<div class="modal" id="cert-kpt"><a class="modal-bg" href="#education" aria-label="Закрыть"></a><div class="modal-card"><div class="modal-top"><b>МИПЗ, КПТ</b><a href="#education">Закрыть</a></div><img src="certs/kpt.jpg" alt="Сертификат: обучение подходу КПТ"></div></div>
+<div class="modal" id="cert-chicago"><a class="modal-bg" href="#education" aria-label="Закрыть"></a><div class="modal-card"><div class="modal-top"><b>University of Chicago, 2024</b><a href="#education">Закрыть</a></div><img src="certs/chicago.jpg" alt="Сертификат: курс Neuroscience, University of Chicago"></div></div>
+
+<script>
+// Ник в Telegram без @, например: elizaveta_psy
+var TELEGRAM = '[НИК]';
+
+document.getElementById('lead').addEventListener('submit', function (e) {
+  e.preventDefault();
+  var name = document.getElementById('f-name').value.trim();
+  var contact = document.getElementById('f-contact').value.trim();
+  var msg = document.getElementById('f-msg').value.trim();
+  var text = 'Здравствуйте! Меня зовут ' + name + '. Мои контакты: ' + contact + '.' + (msg ? ' ' + msg : '');
+  window.open('https://t.me/' + TELEGRAM + '?text=' + encodeURIComponent(text), '_blank');
+});
+</script>
+</body>
+</html>
